@@ -38330,7 +38330,11 @@ var render = function() {
             _c("h2", [_vm._v("Your short link:")]),
             _vm._v(" "),
             _c("h3", { staticClass: "underline" }, [
-              _c("code", [_vm._v(_vm._s(_vm.shortLink))])
+              _c("code", [
+                _c("a", { attrs: { href: _vm.shortLink, target: "_blank" } }, [
+                  _vm._v(_vm._s(_vm.shortLink))
+                ])
+              ])
             ]),
             _vm._v(" "),
             _c(

@@ -16,7 +16,7 @@
         <div v-if="shortLink">
             <br>
             <h2>Your short link:</h2>
-            <h3 class="underline"><code>{{ shortLink }}</code></h3>
+            <h3 class="underline"><code><a :href="shortLink" target="_blank">{{ shortLink }}</a></code></h3>
             <button type="button" class="btn btn-success btn-xs" @click="copyToClipboard()">
                 Copy
             </button>
